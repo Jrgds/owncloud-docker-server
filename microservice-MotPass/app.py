@@ -21,7 +21,7 @@ db = SQLAlchemy(app)
 
 # Modèle pour la table des utilisateurs
 class Users(db.Model):
-    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
     password = db.Column(db.String(100), nullable=False)
 
